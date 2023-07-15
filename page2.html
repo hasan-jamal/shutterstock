@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shutterstock</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Boostrap 4.2.1 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <main class="main-page2">
+        <section class="section1 page2">
+            <div class="box-black">
+                <form action="" class="w-100">
+                    <div class="box-input" id="boxInput">
+                        <input type="text" placeholder="Describe the image and art style you have in mind"
+                            id="inputFill">
+                        <button class="btnClose" id="btnClose" type="reset">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                        <button disabled class="btnGenerate" id="btnGenerate">Generate</button>
+                    </div>
+                </form>
+                <div class="row box-types">
+                    <div class="col">
+                        <a href="" class="active">
+                            <img src="https://www.shutterstock.com/assets/images/generate/all_thumb.png" alt="imgStyle">
+                            <span>All styles</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="https://www.shutterstock.com/assets/images/generate/photo_thumb.png"
+                                alt="imgStyle">
+                            <span>Photo</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="https://www.shutterstock.com/assets/images/generate/all_thumb.png" alt="imgStyle">
+                            <span>All styles</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="https://www.shutterstock.com/assets/images/generate/photo_thumb.png"
+                                alt="imgStyle">
+                            <span>Photo</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="https://www.shutterstock.com/assets/images/generate/all_thumb.png" alt="imgStyle">
+                            <span>All styles</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="https://www.shutterstock.com/assets/images/generate/photo_thumb.png"
+                                alt="imgStyle">
+                            <span>Photo</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <span>No styles</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="box-buttons">
+                    <button class="btnName">
+                        Indoor
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </button>
+                    <button class="btnName">
+                        outdoor
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </button>
+                    <button class="btnName">
+                        Indoor
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </button>
+                    <button class="btnName">
+                        outdoor
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </button>
+                    <button class="btnName">
+                        Indoor
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </button>
+                    <button class="btnName">
+                        outdoor
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </button>
+                    <button class="btnViewMore">View more</button>
+                    <button class="btnClear">Clear</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-images">
+            <h6>Freshly AI-generated images showing test</h6>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="boxImage">
+                        <button class="btnSearch btnPublic">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                data-testid="LargePreview.svgIcon">
+                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                <path
+                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button class="btnPublic btn-download" tabindex="0" type="button" variant="contained"
+                            aria-label="Download" data-automation="SyntheticAssetAction_AssetDownloadAction"><svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                aria-hidden="true" viewBox="0 0 32 32" data-testid="Download.svgIcon">
+                                <path
+                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                </path>
+                            </svg><span class="MuiTouchRipple-root mui-w0pj6f"></span></button>
+                        <button class="btnPublic btn-reload" tabindex="0" type="button" aria-label="Variations"
+                            data-automation="Synthetic_VariationsIconButton"><svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-iwgou8-variationsIcon"
+                                focusable="false" aria-hidden="true" viewBox="0 0 20 20"
+                                data-testid="Variations.svgIcon">
+                                <path
+                                    d="M2.6 7a8 8 0 0 1 15.3 2h2A10 10 0 0 0 .5 7h2Zm14.8 6a8 8 0 0 1-15.3-2H0a10 10 0 0 0 19.4 2h-2Z">
+                                </path>
+                                <path d="M6 8H0V2h2v4h4v2Zm14 10h-2v-4h-4v-2h6v6Z"></path>
+                            </svg><span class="MuiTouchRipple-root mui-w0pj6f"></span></button>
+                        <button class="btnPublic btn-camera" tabindex="0" type="button" aria-label="Zoom out"
+                            data-automation="Synthetic_ZoomOutIconButton"><svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-b865lt-zoomOutIcon"
+                                focusable="false" aria-hidden="true" viewBox="0 0 20 20" data-testid="ZoomOut.svgIcon">
+                                <path fill="none" stroke="currentColor" stroke-width="2px"
+                                    d="M7 1H3a2 2 0 0 0-2 2v4m18 0V3a2 2 0 0 0-2-2h-4m0 18h4a2 2 0 0 0 2-2v-4M1 13v4c0 1.1.9 2 2 2h4">
+                                </path>
+                                <path d="M13 7v6H7V7h6Zm2-2H5v10h10V5Z"></path>
+                            </svg><span class="MuiTouchRipple-root mui-w0pj6f"></span></button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="boxImage">
+                        <button class="btnSearch btnPublic">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                data-testid="LargePreview.svgIcon">
+                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                <path
+                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button class="btnPublic btn-download" tabindex="0" type="button" variant="contained"
+                            aria-label="Download" data-automation="SyntheticAssetAction_AssetDownloadAction"><svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                aria-hidden="true" viewBox="0 0 32 32" data-testid="Download.svgIcon">
+                                <path
+                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                </path>
+                            </svg><span class="MuiTouchRipple-root mui-w0pj6f"></span></button>
+                        <button class="btnPublic btn-reload" tabindex="0" type="button" aria-label="Variations"
+                            data-automation="Synthetic_VariationsIconButton"><svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-iwgou8-variationsIcon"
+                                focusable="false" aria-hidden="true" viewBox="0 0 20 20"
+                                data-testid="Variations.svgIcon">
+                                <path
+                                    d="M2.6 7a8 8 0 0 1 15.3 2h2A10 10 0 0 0 .5 7h2Zm14.8 6a8 8 0 0 1-15.3-2H0a10 10 0 0 0 19.4 2h-2Z">
+                                </path>
+                                <path d="M6 8H0V2h2v4h4v2Zm14 10h-2v-4h-4v-2h6v6Z"></path>
+                            </svg><span class="MuiTouchRipple-root mui-w0pj6f"></span></button>
+                        <button class="btnPublic btn-camera" tabindex="0" type="button" aria-label="Zoom out"
+                            data-automation="Synthetic_ZoomOutIconButton"><svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-b865lt-zoomOutIcon"
+                                focusable="false" aria-hidden="true" viewBox="0 0 20 20" data-testid="ZoomOut.svgIcon">
+                                <path fill="none" stroke="currentColor" stroke-width="2px"
+                                    d="M7 1H3a2 2 0 0 0-2 2v4m18 0V3a2 2 0 0 0-2-2h-4m0 18h4a2 2 0 0 0 2-2v-4M1 13v4c0 1.1.9 2 2 2h4">
+                                </path>
+                                <path d="M13 7v6H7V7h6Zm2-2H5v10h10V5Z"></path>
+                            </svg><span class="MuiTouchRipple-root mui-w0pj6f"></span></button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="boxImage">
+                        <button class="btnSearch btnPublic">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                data-testid="LargePreview.svgIcon">
+                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                <path
+                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button class="btnPublic btn-download" tabindex="0" type="button" variant="contained"
+                            aria-label="Download" data-automation="SyntheticAssetAction_AssetDownloadAction"><svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                aria-hidden="true" viewBox="0 0 32 32" data-testid="Download.svgIcon">
+                                <path
+                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                </path>
+                            </svg><span class="MuiTouchRipple-root mui-w0pj6f"></span></button>
+                        <button class="btnPublic btn-reload" tabindex="0" type="button" aria-label="Variations"
+                            data-automation="Synthetic_VariationsIconButton"><svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-iwgou8-variationsIcon"
+                                focusable="false" aria-hidden="true" viewBox="0 0 20 20"
+                                data-testid="Variations.svgIcon">
+                                <path
+                                    d="M2.6 7a8 8 0 0 1 15.3 2h2A10 10 0 0 0 .5 7h2Zm14.8 6a8 8 0 0 1-15.3-2H0a10 10 0 0 0 19.4 2h-2Z">
+                                </path>
+                                <path d="M6 8H0V2h2v4h4v2Zm14 10h-2v-4h-4v-2h6v6Z"></path>
+                            </svg><span class="MuiTouchRipple-root mui-w0pj6f"></span></button>
+                        <button class="btnPublic btn-camera" tabindex="0" type="button" aria-label="Zoom out"
+                            data-automation="Synthetic_ZoomOutIconButton"><svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-b865lt-zoomOutIcon"
+                                focusable="false" aria-hidden="true" viewBox="0 0 20 20" data-testid="ZoomOut.svgIcon">
+                                <path fill="none" stroke="currentColor" stroke-width="2px"
+                                    d="M7 1H3a2 2 0 0 0-2 2v4m18 0V3a2 2 0 0 0-2-2h-4m0 18h4a2 2 0 0 0 2-2v-4M1 13v4c0 1.1.9 2 2 2h4">
+                                </path>
+                                <path d="M13 7v6H7V7h6Zm2-2H5v10h10V5Z"></path>
+                            </svg><span class="MuiTouchRipple-root mui-w0pj6f"></span></button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="boxImage">
+                        <button class="btnSearch btnPublic">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                data-testid="LargePreview.svgIcon">
+                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                <path
+                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button class="btnPublic btn-download" tabindex="0" type="button" variant="contained"
+                            aria-label="Download" data-automation="SyntheticAssetAction_AssetDownloadAction"><svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                aria-hidden="true" viewBox="0 0 32 32" data-testid="Download.svgIcon">
+                                <path
+                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                </path>
+                            </svg><span class="MuiTouchRipple-root mui-w0pj6f"></span></button>
+                        <button class="btnPublic btn-reload" tabindex="0" type="button" aria-label="Variations"
+                            data-automation="Synthetic_VariationsIconButton"><svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-iwgou8-variationsIcon"
+                                focusable="false" aria-hidden="true" viewBox="0 0 20 20"
+                                data-testid="Variations.svgIcon">
+                                <path
+                                    d="M2.6 7a8 8 0 0 1 15.3 2h2A10 10 0 0 0 .5 7h2Zm14.8 6a8 8 0 0 1-15.3-2H0a10 10 0 0 0 19.4 2h-2Z">
+                                </path>
+                                <path d="M6 8H0V2h2v4h4v2Zm14 10h-2v-4h-4v-2h6v6Z"></path>
+                            </svg><span class="MuiTouchRipple-root mui-w0pj6f"></span></button>
+                        <button class="btnPublic btn-camera" tabindex="0" type="button" aria-label="Zoom out"
+                            data-automation="Synthetic_ZoomOutIconButton"><svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-b865lt-zoomOutIcon"
+                                focusable="false" aria-hidden="true" viewBox="0 0 20 20" data-testid="ZoomOut.svgIcon">
+                                <path fill="none" stroke="currentColor" stroke-width="2px"
+                                    d="M7 1H3a2 2 0 0 0-2 2v4m18 0V3a2 2 0 0 0-2-2h-4m0 18h4a2 2 0 0 0 2-2v-4M1 13v4c0 1.1.9 2 2 2h4">
+                                </path>
+                                <path d="M13 7v6H7V7h6Zm2-2H5v10h10V5Z"></path>
+                            </svg><span class="MuiTouchRipple-root mui-w0pj6f"></span></button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="section-smallImage">
+            <p>More AI-generated images from the Shutterstock library.</p>
+            <div class="row justify-content-start">
+                <div class="col">
+                    <div class="smallImage">
+                        <button class="btnSearch btnPublic">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                data-testid="LargePreview.svgIcon">
+                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                <path
+                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="smallImage">
+                        <button class="btnSearch btnPublic">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                data-testid="LargePreview.svgIcon">
+                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                <path
+                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="smallImage">
+                        <button class="btnSearch btnPublic">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                data-testid="LargePreview.svgIcon">
+                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                <path
+                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="smallImage">
+                        <button class="btnSearch btnPublic">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                data-testid="LargePreview.svgIcon">
+                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                <path
+                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="smallImage">
+                        <button class="btnSearch btnPublic">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                data-testid="LargePreview.svgIcon">
+                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                <path
+                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="smallImage">
+                        <button class="btnSearch btnPublic">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                data-testid="LargePreview.svgIcon">
+                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                <path
+                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="smallImage">
+                        <button class="btnSearch btnPublic">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                data-testid="LargePreview.svgIcon">
+                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                <path
+                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="smallImage">
+                        <button class="btnSearch btnPublic">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                data-testid="LargePreview.svgIcon">
+                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                <path
+                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="smallImage">
+                        <button class="btnSearch btnPublic">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                data-testid="LargePreview.svgIcon">
+                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                <path
+                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+
+    <!-- Boostrap 4.2.1 JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        // slice text card in section boxs
+        $('.box-tab span').text(function (i, txt) {
+            return (txt ? txt.slice(0, 20) : txt) + "...";
+        });
+
+        // add some effect for box search in section1
+        var btnGenerate = document.getElementById('btnGenerate');
+        var inputFill = document.getElementById('inputFill');
+        var btnClose = document.getElementById('btnClose');
+        btnClose.style.display = "none";
+        inputFill.addEventListener("input", function () {
+            if (inputFill.value !== "") {
+                btnGenerate.disabled = false;
+                btnGenerate.classList.add("white-background");
+                btnClose.style.display = "inline-flex";
+            } else {
+                btnGenerate.disabled = true;
+                btnGenerate.classList.remove("white-background");
+                btnClose.style.display = "none";
+            }
+        });
+
+    </script>
+</body>
+
+</html>

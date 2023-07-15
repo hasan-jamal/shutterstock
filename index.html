@@ -1,0 +1,2246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shutterstock</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Boostrap 4.2.1 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <main>
+        <section class="section1">
+            <img src="https://images.ctfassets.net/hrltx12pl8hq/3z8Gom3wfzLphv2WWb6kh9/b590d7d5cb4c770b0d5923ba683eeb85/sstk.ai_black___red_-_top_padding.png"
+                alt="logo" class="imgLogo">
+            <h1>AI Image Generator: Create the best AI images instantly</h1>
+            <p>Unleash your creativity with the power of AI art to create unique AI photos using our free AI image
+                generator. Simply type a descriptive prompt to get started.</p>
+            <div class="box-black">
+                <form action="" class="w-100">
+                    <div class="box-input" id="boxInput">
+                        <input type="text" placeholder="Describe the image and art style you have in mind"
+                            id="inputFill">
+                        <button class="btnClose" id="btnClose" type="reset">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                        <button disabled class="btnGenerate" id="btnGenerate">Generate</button>
+                    </div>
+                </form>
+                <div class="row box-types">
+                    <div class="col">
+                        <a href="" class="active">
+                            <img src="https://www.shutterstock.com/assets/images/generate/all_thumb.png" alt="imgStyle">
+                            <span>All styles</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="https://www.shutterstock.com/assets/images/generate/photo_thumb.png"
+                                alt="imgStyle">
+                            <span>Photo</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="https://www.shutterstock.com/assets/images/generate/all_thumb.png" alt="imgStyle">
+                            <span>All styles</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="https://www.shutterstock.com/assets/images/generate/photo_thumb.png"
+                                alt="imgStyle">
+                            <span>Photo</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="https://www.shutterstock.com/assets/images/generate/all_thumb.png" alt="imgStyle">
+                            <span>All styles</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="https://www.shutterstock.com/assets/images/generate/photo_thumb.png"
+                                alt="imgStyle">
+                            <span>Photo</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <span>No styles</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="box-buttons">
+                    <button class="btnName">
+                        Indoor
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </button>
+                    <button class="btnName">
+                        outdoor
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </button>
+                    <button class="btnName">
+                        Indoor
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </button>
+                    <button class="btnName">
+                        outdoor
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </button>
+                    <button class="btnName">
+                        Indoor
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </button>
+                    <button class="btnName">
+                        outdoor
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </button>
+                    <button class="btnViewMore">View more</button>
+                    <button class="btnClear">Clear</button>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <h4>How to make AI images with Shutterstock's Al image
+                generator:</h4>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="section2-text">
+                        <div class="d-flex align-items-start">
+                            <span>1</span>
+                            <p><b>Type a text prompt that describes what you want to generate</b>. The more detail you
+                                add to your text, the better!</p>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <span>2</span>
+                            <p><b>Apply various visual styles to your image</b>. Choose from cartoon, oil painting,
+                                neon, 3D, and so many more!</p>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <span>3</span>
+                            <p><b>Click the Generate button</b>. In just a few seconds, Shutterstock generates four AI
+                                image versions of images based on your prompt.</p>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <span>4</span>
+                            <p><b>Experiment and edit your AI image.</b> Click the Zoom Out button for a different
+                                perspective on the image. Adjust your text. Or simply select different style variations.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <span>5</span>
+                            <p><b>Download your AI generated image.</b> You can license it just like any other
+                                Shutterstock image to use in your creative projects or share on social.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://www.w3schools.com/bootstrap4/ny.jpg" alt="Los Angeles" width="1100"
+                                    height="500">
+                                <div class="carousel-caption">
+                                    <svg focusable="false" aria-hidden="true" viewBox="0 0 26 24"
+                                        data-testid="AiGenerator.svgIcon">
+                                        <path
+                                            d="M25.0039 0.00837148L25.0039 4.06302L25.0039 7.29395L23.0446 7.29395L23.0446 3.55119L23.0446 1.96772L21.4931 1.96772L19.3978 1.96772L17.5904 1.96772L17.5904 0.00837157L17.8623 0.00837156L19.8456 0.00837154L21.8849 0.00837152L23.8523 0.00837149L25.0039 0.00837148Z">
+                                        </path>
+                                        <path
+                                            d="M25.0039 12.2999L25.0039 13.7154C25.0039 16.5065 23.0526 18.8417 20.4294 19.4415C19.8296 22.0566 17.5024 24 14.7033 24L0.995911 24L0.995911 18.7617L0.995911 16.7144L0.995911 10.3006C0.995911 9.62879 1.11587 8.98101 1.3318 8.37321C1.54773 7.71743 1.88361 7.11763 2.30747 6.5978C2.77132 6.02199 3.34713 5.54215 3.99491 5.16628C4.48275 4.89437 5.01057 4.68644 5.57038 4.55848C6.17019 1.94335 8.49741 6.69445e-07 11.2965 6.36066e-07L12.584 6.20712e-07L12.584 1.95935L11.2965 1.95935C9.64903 1.95935 8.24149 2.97501 7.66569 4.41453L20.5814 4.41453L20.5814 17.3462C22.0289 16.7704 23.0446 15.3629 23.0446 13.7154L23.0446 12.2999L25.0039 12.2999ZM7.38578 13.4915C11.9283 13.2196 15.9509 10.9883 18.622 7.62946L18.622 6.38987L17.0546 6.38987C14.7513 9.27691 11.2965 11.2123 7.38578 11.4762L7.38578 13.4915V13.4915ZM7.38578 17.4662C11.6244 17.2742 15.5111 15.7068 18.622 13.2196L18.622 10.5485C15.679 13.3955 11.7443 15.2189 7.38578 15.4588L7.38578 17.4662V17.4662ZM15.0872 17.6341L18.622 17.6341L18.622 15.6668C17.5184 16.4265 16.3348 17.0983 15.0872 17.6341ZM2.95526 22.0487L14.7113 22.0487C16.3588 22.0487 17.7663 21.033 18.3421 19.5935L5.42643 19.5935L5.42643 19.4255L5.42643 17.4662L5.42643 15.4508L5.42643 13.4915L5.42643 11.4762L5.42643 9.50883L5.42643 7.4935L5.42643 6.66978C5.03456 6.82972 4.67468 7.04565 4.36279 7.31756C3.81097 7.78141 3.39511 8.38121 3.15519 9.09297C3.02723 9.47684 2.96325 9.8927 2.96325 10.3166L2.96325 22.0407L2.95526 22.0487ZM7.37778 9.51683C10.0809 9.2929 12.5281 8.14928 14.3834 6.38187L10.9926 6.38187C9.89694 6.96568 8.67335 7.35755 7.36979 7.48551L7.36979 9.50883L7.37778 9.51683Z">
+                                        </path>
+                                    </svg>
+                                    <h2>Futuristic city with retro style flying cars
+                                    </h2>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.w3schools.com/bootstrap4/ny.jpg" alt="Chicago" width="1100"
+                                    height="500">
+                                <div class="carousel-caption">
+                                    <svg focusable="false" aria-hidden="true" viewBox="0 0 26 24"
+                                        data-testid="AiGenerator.svgIcon">
+                                        <path
+                                            d="M25.0039 0.00837148L25.0039 4.06302L25.0039 7.29395L23.0446 7.29395L23.0446 3.55119L23.0446 1.96772L21.4931 1.96772L19.3978 1.96772L17.5904 1.96772L17.5904 0.00837157L17.8623 0.00837156L19.8456 0.00837154L21.8849 0.00837152L23.8523 0.00837149L25.0039 0.00837148Z">
+                                        </path>
+                                        <path
+                                            d="M25.0039 12.2999L25.0039 13.7154C25.0039 16.5065 23.0526 18.8417 20.4294 19.4415C19.8296 22.0566 17.5024 24 14.7033 24L0.995911 24L0.995911 18.7617L0.995911 16.7144L0.995911 10.3006C0.995911 9.62879 1.11587 8.98101 1.3318 8.37321C1.54773 7.71743 1.88361 7.11763 2.30747 6.5978C2.77132 6.02199 3.34713 5.54215 3.99491 5.16628C4.48275 4.89437 5.01057 4.68644 5.57038 4.55848C6.17019 1.94335 8.49741 6.69445e-07 11.2965 6.36066e-07L12.584 6.20712e-07L12.584 1.95935L11.2965 1.95935C9.64903 1.95935 8.24149 2.97501 7.66569 4.41453L20.5814 4.41453L20.5814 17.3462C22.0289 16.7704 23.0446 15.3629 23.0446 13.7154L23.0446 12.2999L25.0039 12.2999ZM7.38578 13.4915C11.9283 13.2196 15.9509 10.9883 18.622 7.62946L18.622 6.38987L17.0546 6.38987C14.7513 9.27691 11.2965 11.2123 7.38578 11.4762L7.38578 13.4915V13.4915ZM7.38578 17.4662C11.6244 17.2742 15.5111 15.7068 18.622 13.2196L18.622 10.5485C15.679 13.3955 11.7443 15.2189 7.38578 15.4588L7.38578 17.4662V17.4662ZM15.0872 17.6341L18.622 17.6341L18.622 15.6668C17.5184 16.4265 16.3348 17.0983 15.0872 17.6341ZM2.95526 22.0487L14.7113 22.0487C16.3588 22.0487 17.7663 21.033 18.3421 19.5935L5.42643 19.5935L5.42643 19.4255L5.42643 17.4662L5.42643 15.4508L5.42643 13.4915L5.42643 11.4762L5.42643 9.50883L5.42643 7.4935L5.42643 6.66978C5.03456 6.82972 4.67468 7.04565 4.36279 7.31756C3.81097 7.78141 3.39511 8.38121 3.15519 9.09297C3.02723 9.47684 2.96325 9.8927 2.96325 10.3166L2.96325 22.0407L2.95526 22.0487ZM7.37778 9.51683C10.0809 9.2929 12.5281 8.14928 14.3834 6.38187L10.9926 6.38187C9.89694 6.96568 8.67335 7.35755 7.36979 7.48551L7.36979 9.50883L7.37778 9.51683Z">
+                                        </path>
+                                    </svg>
+                                    <h2> retro style flying cars
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.w3schools.com/bootstrap4/ny.jpg" alt="New York" width="1100"
+                                    height="500">
+                                <div class="carousel-caption">
+                                    <svg focusable="false" aria-hidden="true" viewBox="0 0 26 24"
+                                        data-testid="AiGenerator.svgIcon">
+                                        <path
+                                            d="M25.0039 0.00837148L25.0039 4.06302L25.0039 7.29395L23.0446 7.29395L23.0446 3.55119L23.0446 1.96772L21.4931 1.96772L19.3978 1.96772L17.5904 1.96772L17.5904 0.00837157L17.8623 0.00837156L19.8456 0.00837154L21.8849 0.00837152L23.8523 0.00837149L25.0039 0.00837148Z">
+                                        </path>
+                                        <path
+                                            d="M25.0039 12.2999L25.0039 13.7154C25.0039 16.5065 23.0526 18.8417 20.4294 19.4415C19.8296 22.0566 17.5024 24 14.7033 24L0.995911 24L0.995911 18.7617L0.995911 16.7144L0.995911 10.3006C0.995911 9.62879 1.11587 8.98101 1.3318 8.37321C1.54773 7.71743 1.88361 7.11763 2.30747 6.5978C2.77132 6.02199 3.34713 5.54215 3.99491 5.16628C4.48275 4.89437 5.01057 4.68644 5.57038 4.55848C6.17019 1.94335 8.49741 6.69445e-07 11.2965 6.36066e-07L12.584 6.20712e-07L12.584 1.95935L11.2965 1.95935C9.64903 1.95935 8.24149 2.97501 7.66569 4.41453L20.5814 4.41453L20.5814 17.3462C22.0289 16.7704 23.0446 15.3629 23.0446 13.7154L23.0446 12.2999L25.0039 12.2999ZM7.38578 13.4915C11.9283 13.2196 15.9509 10.9883 18.622 7.62946L18.622 6.38987L17.0546 6.38987C14.7513 9.27691 11.2965 11.2123 7.38578 11.4762L7.38578 13.4915V13.4915ZM7.38578 17.4662C11.6244 17.2742 15.5111 15.7068 18.622 13.2196L18.622 10.5485C15.679 13.3955 11.7443 15.2189 7.38578 15.4588L7.38578 17.4662V17.4662ZM15.0872 17.6341L18.622 17.6341L18.622 15.6668C17.5184 16.4265 16.3348 17.0983 15.0872 17.6341ZM2.95526 22.0487L14.7113 22.0487C16.3588 22.0487 17.7663 21.033 18.3421 19.5935L5.42643 19.5935L5.42643 19.4255L5.42643 17.4662L5.42643 15.4508L5.42643 13.4915L5.42643 11.4762L5.42643 9.50883L5.42643 7.4935L5.42643 6.66978C5.03456 6.82972 4.67468 7.04565 4.36279 7.31756C3.81097 7.78141 3.39511 8.38121 3.15519 9.09297C3.02723 9.47684 2.96325 9.8927 2.96325 10.3166L2.96325 22.0407L2.95526 22.0487ZM7.37778 9.51683C10.0809 9.2929 12.5281 8.14928 14.3834 6.38187L10.9926 6.38187C9.89694 6.96568 8.67335 7.35755 7.36979 7.48551L7.36979 9.50883L7.37778 9.51683Z">
+                                        </path>
+                                    </svg>
+                                    <h2>city with retro style flying cars
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                data-testid="KeyboardArrowLeftIcon">
+                                <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                            </svg> </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowRightIcon">
+                                <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section-duplicate">
+            <div class="container-padding">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="//images.ctfassets.net/hrltx12pl8hq/2SzWyjdZJ2ZsDnRcyE1Agv/6230ac9ba4fd19bc40c89e0961bf6140/ai_gen_opener.gif?fit=fill&w=600&h=338"
+                            alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section-duplicate-text">
+                            <h5>Be the first to access our new design assistant</h5>
+                            <p>Shutterstock’s smart design assistant will guide you from early concepts to breathtaking
+                                final images so you can get exactly what you need — in a matter of seconds.</p>
+                            <button class="btnjoin">Join the waitlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="sectio-tips">
+            <h2>Tips for writing the best text-to-image prompts</h2>
+            <div class="row mt-2">
+                <div class="col-md-4">
+                    <div class="card">
+                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit mui-1vdj6uk" focusable="false"
+                            aria-hidden="true" viewBox="0 0 96 96" data-testid="Pencil.svgIcon">
+                            <path
+                                d="m77.94668,22.94962l-4.95722-4.91414c-1.36888-1.35698-3.16302-2.03548-4.95716-2.03548s-3.58834.67849-4.95722,2.03548L20.58485,60.15656l-4.49742,16.71858c-.43889,1.6316.83823,3.12487,2.40834,3.12487.24555,0,.49855-.0366.75302-.11489l16.20764-4.98619,42.49024-42.12108c2.73776-2.71397,2.73776-7.11426,0-9.82822Zm-56.47408,49.3192l2.63549-9.79738,6.3091,2.681,2.72449,6.30057-9.53349,2.9329-2.13559-2.1171Zm11.87044-7.91121l33.98112-33.68584,3.54084,3.51014-35.39725,35.08966-2.12471-4.91396Zm-2.12471-2.10589l-4.95697-2.10625L61.65878,25.05563l3.54084,3.51008L31.21832,62.25172Zm43.89567-32.28195l-2.12447,2.10607-9.20622-9.12628,2.12447-2.10601c.56744-.56251,1.32199-.87234,2.12453-.87234s1.55703.30983,2.12447.87234l4.95722,4.91414c.5675.56251.87998,1.31051.87998,2.10607,0,.7955-.31248,1.5435-.87998,2.10601Z">
+                            </path>
+                        </svg>
+                        <h6>Write your idea</h6>
+                        <p>Start with this simple combo. Use any noun + any verb + any artistic style. And voilà! You’ll
+                            have a unicorn riding a
+                            bike in graffiti mural style, in no time!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit mui-1vdj6uk" focusable="false"
+                            aria-hidden="true" viewBox="0 0 96 96" data-testid="DocumentList.svgIcon">
+                            <path
+                                d="m70,58h-2v-31c0-4.96289-4.03711-9-9-9H24c-.15839,0-.31061.02301-.45837.0578-4.23651.47827-7.54163,4.08008-7.54163,8.4422v4.5c0,1.10449.89551,2,2,2h11v35c0,5.51367,4.48633,10,10,10h31c5.51367,0,10-4.48633,10-10s-4.48633-10-10-10ZM29,29h-9v-2.5c0-2.48145,2.01855-4.5,4.5-4.5s4.5,2.01855,4.5,4.5v2.5Zm4,39V26.5c0-1.65338-.48212-3.19305-1.30231-4.5h27.30231c2.75684,0,5,2.24316,5,5v31h-25c-1.10449,0-2,.89551-2,2s.89551,2,2,2c3.30859,0,6,2.69141,6,6s-2.69141,6-6,6-6-2.69141-6-6Zm37,6h-23.01929c1.2616-1.67371,2.01929-3.74756,2.01929-6s-.75769-4.32629-2.01929-6h23.01929c3.30859,0,6,2.69141,6,6s-2.69141,6-6,6ZM37,30c0-1.10461.89545-2,2-2s2,.89539,2,2c0,1.10455-.89545,2-2,2s-2-.89545-2-2Zm0,10c0-1.10461.89545-2,2-2s2,.89539,2,2c0,1.10455-.89545,2-2,2s-2-.89545-2-2Zm0,10c0-1.10461.89545-2,2-2s2,.89539,2,2c0,1.10455-.89545,2-2,2s-2-.89545-2-2Zm6-20c0-1.10461.89545-2,2-2h13c1.10455,0,2,.89539,2,2,0,1.10455-.89545,2-2,2h-13c-1.10455,0-2-.89545-2-2Zm0,10c0-1.10461.89545-2,2-2h13c1.10455,0,2,.89539,2,2,0,1.10455-.89545,2-2,2h-13c-1.10455,0-2-.89545-2-2Zm0,10c0-1.10461.89545-2,2-2h13c1.10455,0,2,.89539,2,2,0,1.10455-.89545,2-2,2h-13c-1.10455,0-2-.89545-2-2Z">
+                            </path>
+                        </svg>
+                        <h6>Be descriptive</h6>
+                        <p>The more details, the better! Instead of saying “heavy traffic on a bridge,” say something
+                            like, “heavy traffic on the
+                            Golden Gate Bridge at sunset on a foggy night.”</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit mui-1vdj6uk" focusable="false"
+                            aria-hidden="true" viewBox="0 0 96 96" data-testid="CameraHeart.svgIcon">
+                            <path
+                                d="m26.5,43c-1.38069,0-2.5-1.11931-2.5-2.5s1.11931-2.5,2.5-2.5,2.5,1.11927,2.5,2.5-1.11927,2.5-2.5,2.5Zm27.84317-17h-12.68634l-6.82841,6.82843c-.75014.75012-1.76755,1.17157-2.82841,1.17157h-8c-2.2056,0-4,1.79437-4,4v28c0,2.20563,1.7944,4,4,4h48c2.2056,0,4-1.79437,4-4v-28c0-2.20563-1.7944-4-4-4h-8c-1.06087,0-2.07828-.42145-2.82841-1.17157l-6.82841-6.82843m1.65683-4l8,8h8c4.41827,0,8,3.58173,8,8v28c0,4.41827-3.58173,8-8,8H24c-4.41827,0-8-3.58173-8-8v-28c0-4.41827,3.58173-8,8-8h8l8-8h16Zm-1.79185,20c-1.41841,0-2.7506.54626-3.75113,1.53815l-.34499.34198-2.11203,2.09369-2.11203-2.09369-.34492-.34192c-1.0006-.99194-2.33276-1.53821-3.75119-1.53821s-2.7506.54626-3.75113,1.53815c-.99355.98499-1.54073,2.29266-1.54073,3.68207s.54718,2.69714,1.54073,3.68213l.34509.34216,9.61418,9.53113,9.61435-9.53131.34474-.3418c.99373-.98517,1.54091-2.29285,1.54091-3.68231s-.54718-2.69708-1.54073-3.68207c-1.00053-.99188-2.33272-1.53815-3.75113-1.53815m0-3c2.12207,0,4.24413.80255,5.86322,2.40765,3.23817,3.21021,3.23817,8.41498,0,11.62518l-.34491.34198-11.72646,11.62518-11.72646-11.62518-.34491-.34198c-3.23817-3.21021-3.23817-8.41498,0-11.62518,1.61909-1.6051,3.74115-2.40765,5.86322-2.40765s4.24414.80255,5.86322,2.40765l.34492.34192.34492-.34192c1.61908-1.6051,3.74115-2.40765,5.86322-2.40765h0Z">
+                            </path>
+                        </svg>
+                        <h6>Add vibes & visual cues</h6>
+                        <p>Add emotional words to prompts, such as “upbeat.” You can also add camera styles like
+                            “instant film,” perspectives like
+                            “aerial view,” or artistic styles like “Impressionist.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-boxs">
+            <div class="container-padding">
+                <h2>Explore visuals created with the power of AI</h2>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Art</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Digital</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">3D</a>
+                    </li>
+                </ul><!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tabs-2" role="tabpanel">
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tabs-3" role="tabpanel">
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tabs-4" role="tabpanel">
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                                <div class="box-tab">
+                                    <div class="box-image">
+                                        <span>a beatiful sunset with mountains in the background and a lake with glacier
+                                            water in
+                                            the
+                                            foreground</span>
+                                        <button class="btnSearch btnPublic">
+                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-kwmnga-iconContainer"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="LargePreview.svgIcon">
+                                                <path d="M14.667 8H12v4H8v2.667h4v4h2.667v-4h4V12h-4V8z"></path>
+                                                <path
+                                                    d="M21.747 19.867c1.399-1.787 2.243-4.067 2.243-6.544 0-5.891-4.776-10.667-10.667-10.667S2.656 7.432 2.656 13.323 7.432 23.99 13.323 23.99c2.477 0 4.757-.844 6.567-2.261l7.563 7.604 1.88-1.88zm-8.414 1.466c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="btnFree">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Download.svgIcon">
+                                                <path
+                                                    d="M24.933 15.733l-1.867-1.867-5.733 5.733V3.332h-2.667v16.267l-5.733-5.733-1.867 1.867 8.933 8.933 8.933-8.933zm-22.266 11.6V30h26.667v-2.667H2.667z">
+                                                </path>
+                                            </svg>
+                                            <div>Free with trial</div>
+                                        </button>
+                                        <button class="btnLike">
+                                            <svg focusable="false" aria-hidden="true" viewBox="0 0 32 32"
+                                                data-testid="Heart.svgIcon">
+                                                <path
+                                                    d="M15.667 7.6C7.267-.96-2.92 9.427 5.48 17.987l10.187 10.387L25.84 17.987C34.28 9.334 24.093-1 15.667 7.6zM24 16.12l-8.267 8.44-8.347-8.44c-2.147-2.187-2.893-4.6-2.053-6.613.596-1.443 1.992-2.44 3.621-2.44h.062-.003c1.907.142 3.58 1.039 4.739 2.391l.008.009 1.907 1.947 1.893-1.947c1.179-1.377 2.871-2.285 4.777-2.425l.023-.001h.029c1.626 0 3.021.99 3.615 2.401l.01.026c.84 2.027.093 4.453-2.013 6.653z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <p>a beatiful sunset with mountains in the background and a lake with glacier water
+                                        in the
+                                        foreground</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <h1>We’re powering the future of AI, the right way</h1>
+            <p>Experience the power of our ethically-built image generator. It's trained on diverse and inclusive
+                licensed Shutterstock content from our valued contributors.
+                That means you can license and safely use AI-generated images, worry-free.
+            </p>
+            <a href="">Learn more about responsible AI at Shutterstock</a>
+        </section>
+        <section class="section-duplicate">
+            <div class="container-padding">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="//images.ctfassets.net/hrltx12pl8hq/2GID2t9fWqre78JaTFRCab/a3ceb17a7433214f12cbd3967a28b366/Group_2371.png?fit=fill&w=600&h=338"
+                            alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section-duplicate-text">
+                            <h5>Everything you need in one place</h5>
+                            <p>Generate AI images–or source them from Shutterstock’s collection–then customize in
+                                Creative Flow. Start creating right now, all in once place. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-cards">
+            <h2>How is Shutterstock responsibly powering the creative future?</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card-box">
+                        <img src="//images.ctfassets.net/hrltx12pl8hq/2paJYT1dw3N2sDYlZgEQZE/3dcf60963d920d1fe8bb653ea4b9c8b8/ai_fireside_chat_minicover.jpg?fit=fill&w=600&h=338"
+                            alt="image">
+                        <a href="">
+                            Video: Artist Chats About Using AI as a Creative Partner
+                        </a>
+                        <p>Artist and storyteller Jah Reynolds tackles the difficult questions surrounding AI art, how
+                            he uses it, and how it is changing expression.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-box">
+                        <img src="//images.ctfassets.net/hrltx12pl8hq/2paJYT1dw3N2sDYlZgEQZE/3dcf60963d920d1fe8bb653ea4b9c8b8/ai_fireside_chat_minicover.jpg?fit=fill&w=600&h=338"
+                            alt="image">
+                        <a href="">
+                            Video: Artist Chats About Using AI as a Creative Partner
+                        </a>
+                        <p>Artist and storyteller Jah Reynolds tackles the difficult questions surrounding AI art, how
+                            he uses it, and how it is changing expression.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-box">
+                        <img src="//images.ctfassets.net/hrltx12pl8hq/2paJYT1dw3N2sDYlZgEQZE/3dcf60963d920d1fe8bb653ea4b9c8b8/ai_fireside_chat_minicover.jpg?fit=fill&w=600&h=338"
+                            alt="image">
+                        <a href="">
+                            Video: Artist Chats About Using AI as a Creative Partner
+                        </a>
+                        <p>Artist and storyteller Jah Reynolds tackles the difficult questions surrounding AI art, how
+                            he uses it, and how it is changing expression.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-box">
+                        <img src="//images.ctfassets.net/hrltx12pl8hq/2paJYT1dw3N2sDYlZgEQZE/3dcf60963d920d1fe8bb653ea4b9c8b8/ai_fireside_chat_minicover.jpg?fit=fill&w=600&h=338"
+                            alt="image">
+                        <a href="">
+                            Video: Artist Chats About Using AI as a Creative Partner
+                        </a>
+                        <p>Artist and storyteller Jah Reynolds tackles the difficult questions surrounding AI art, how
+                            he uses it, and how it is changing expression.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-toggles mb-5">
+            <h4>All your AI-generated image questions answered.</h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                What are AI-generated images?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            AI-generated images represent new content that is created using AI technology trained on
+                            millions of real content assets, descriptions, and keywords. AI content generators
+                            require some human input like a description, prompt, or parameters. </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                Can I use these images for my personal or commercial project?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            If you have an active plan, you can download an image with a Standard License or an
+                            Enhanced Licensed, and enjoy the rights associated with those licenses. The only caveat
+                            is that you must not use the generated image to infringe, misappropriate, or violate the
+                            intellectual property or other rights of any third party, to generate spam, false,
+                            misleading, deceptive, harmful, or violent imagery. </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                How does Shutterstock reward artists who have contributed to generative AI models?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            Shutterstock is the first AI image generator on the market that compensates contributors
+                            for their roles in the generative AI process. Through the Shutterstock Contributor Fund,
+                            we directly compensate Shutterstock contributors when their content is used in the
+                            development of generative models. The Shutterstock Contributor Fund will also pay
+                            ongoing royalties to contributors for future revenue associated with AI-generated
+                            content which has been generated and licensed directly on the Shutterstock platform.
+                            This is part of our commitment to responsible AI. For more information see this page on
+                            our Contributor knowledge base.
+
+                        </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                It looks like a generated image contains a recognizable trademark, landmark, or
+                                public personality. Can I still use it?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            No. You must not use generated images to infringe, misappropriate, or violate the
+                            intellectual property or other rights of any third party, to generate spam, false,
+                            misleading, deceptive, harmful, or violent imagery.
+
+                        </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                Who are the people that appear in generated images?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            Images of people produced by generative image models do not depict specific real-world
+                            individuals - they are constructed by the model based on hundreds of millions of images
+                            that it has seen in the past. So while they may bear a resemblance to real people, they
+                            are more of an amalgam of many faces into one. This means that you can safely use them
+                            without the need for a model release - as they are a generated likeness rather than a
+                            likeness of a real person who has been photographed. The exception is if you include a
+                            specific name in your prompt text, for example a celebrity, in which case the AI picture
+                            generator will construct a visual based on images that have been linked to that name,
+                            and are thus far more likely to actually depict that person - such images are not safe
+                            for commercial use. We see a similar pattern for images of places and things: a generic
+                            descriptor ("mountains") will construct an image based off multiple examples of that
+                            descriptor (mountains across the world), whereas a specific descriptor ("Wicklow
+                            Mountains") will be more heavily based off images of that specific example.
+
+                        </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                I'm seeing images with garbled text, what is happening?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            Generative image models are a new and impressive technology, but they are not yet
+                            perfect and sometimes get confused when creating precise details. Sometimes this
+                            includes attempts at rendering text in a style influenced by the text that appeared in
+                            some of the images the model was trained on. The text does not mean anything! An analogy
+                            could be an artist who had never seen written language before trying to make a film
+                            poster, squinting at all those important-looking shapes that they all seem to have, and
+                            trying to recreate them in their own design without understanding what they mean.
+
+                        </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                If I generate content, will it be made available for other customers? Or will it be
+                                mine exclusively?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            If you generate content using Shutterstock’s AI-generated content capabilities, this
+                            content may be made available for other customers to license, as well.
+
+
+                        </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                I'm seeing images with garbled text, what is happening?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            A huge amount of computing power goes into enabling an AI image generator to create new
+                            images from text.
+                        </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                Are there protections against generating inappropriate content?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            We have safeguards in place to avoid the creation of harmful, violent, deceptive, or
+                            other malicious material. That said, this technology is still in beta mode and we don't
+                            always get it right.
+                            <br>
+                            Please notify us of any inappropriate or offensive content by clicking the Feedback
+                            button and providing details of your experience.
+
+                        </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                What resolution and file format is supported?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            The default format for a full download is a JPG file with 1024 x 1024 pixels. There is
+                            also the option of downloading a smaller resolution 512 x 512 JPG file. We are exploring
+                            the possibility of supporting additional file formats and higher resolutions. This means
+                            we currently only support the creation of square images. We do intend to add support for
+                            vertical and horizontal images in the near future.
+
+                        </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                Is there a limit to how many images I can generate?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            We want creative users to test this AI image generator with relatively free rein. As
+                            part of this, we are testing the service with generous personal limits in place. If we
+                            detect bots, automated activity, or other misuse of the tool then we drastically reduce
+                            rate limits or block access altogether. If you are a creative looking to generate AI
+                            picture from text to meet a workflow need, the default limits in place should be higher
+                            than you are likely to notice. Unlike other AI picture generators out there - with
+                            Shutterstock you don't pay to explore the options, you only pay for the content that
+                            meets your creative need.
+
+
+                        </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                Do you support text prompts in languages other than English?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            Yes! We support over 20 languages, just like the rest of our website. Even if you enter
+                            a prompt in a language that is not officially supported our AI image generator will do
+                            its best to understand the text and give great results.
+
+
+                        </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                Some of the generated results seem weird/offensive/illegal, what should I do?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            This is a new and dynamic technology, which means it's subject to producing results that
+                            are not intended. Please use the Feedback button on every image to report results that
+                            need our attention.
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                Does the main Shutterstock library of images contain AI-generated content?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            Shutterstock users looking for AI-generated images in our core library can use the
+                            AI-generated image filter on the Image search results page. All AI-generated images
+                            displayed has been generated using our Shutterstock AI image generator. We are still
+                            unable to accept AI-generated image submissions from contributors due to concerns
+                            regarding the safety and licensing of content created using other generative tools and
+                            models.
+                        </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                Why is Shutterstock the best free AI image generator?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            You can use Shutterstock’s free AI image generator for any project! Because you license
+                            AI generated images, brands and businesses can use them worry-free. Our AI models are
+                            trained on our own massive library of diverse and beautiful images.
+                            <br>
+                            With each licensed AI generated art piece, our contributors are paid for their help in
+                            training the models. This means that not only is our AI image generator safe to use, you
+                            can feel good while using it.
+                        </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                Are AI generated images safe for commercial use?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            Only images generated by Shutterstock AI are guaranteed safe for commercial use. This is
+                            because our AI is ethically built and trained on proprietary data. We even have
+                            resources available to help you start using it right away!
+                            <br>
+                            Our Free 2023 AI Ebook to Create and Optimize Content for Business Includes:
+                            - Detailed tutorials on how to write quality AI text prompts for the best AI image
+                            results
+                            - Insights into how specific roles can use AI to boost productivity
+                            - Benefits of AI to agencies, marketing teams, and solopreneurs
+                            - Expert advice from thought leaders on how to approach AI ethically
+                            <br>
+                            Visit https://www.shutterstock.com/business/ebook-generative-ai to download.
+                        </div>
+                    </div>
+
+                    <div class="faqCard">
+                        <div class="d-flex justify-content-between dropdown-public">
+                            <div class="cardTitle">
+                                How do I start making AI generated images?
+                            </div>
+                            <div class="icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-10dohqv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon">
+                                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cardDisc toggle-content dropdown-content">
+                            All you need to do is have an idea and type it into the form field above. Within 10-15
+                            seconds, our AI picture generator will create a handful of images based on your text. If
+                            you
+                            need to adjust its output, edit your text. And if you love what you see, license you
+                            image!
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section-tool">
+            <h6>Tried the tool? Let us know what you think!</h6>
+            <a href="">Provide feedback</a>
+        </section>
+    </main>
+
+
+    <!-- Boostrap 4.2.1 JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Toggle dropdown content
+            $('.dropdown-public').on('click', function () {
+                var dropdownContent = $(this).siblings('.dropdown-content');
+                dropdownContent.slideToggle();
+                if (dropdownContent.css('display', 'block')) {
+                    $(this).find('svg').css('transform', 'rotate(180deg)');
+                } else {
+                    $(this).find('svg').css('transform', 'rotate(0deg)');
+                }
+                // Prevent event propagation to the document click event
+                event.stopPropagation();
+            });
+
+            // Close dropdown when clicking outside
+            $(document).on('click', function (event) {
+                var dropdownContent = $('.dropdown-content');
+                var target = $(event.target);
+
+                if (!target.closest('.dropdown-content').length && !target.hasClass('dropdown-public')) {
+                    dropdownContent.hide();
+                }
+            });
+        });
+
+
+        // slice text card in section boxs
+        $('.box-tab span').text(function (i, txt) {
+            return (txt ? txt.slice(0, 20) : txt) + "...";
+        });
+
+        // add some effect for box search in section1
+        var btnGenerate = document.getElementById('btnGenerate');
+        var inputFill = document.getElementById('inputFill');
+        var btnClose = document.getElementById('btnClose');
+        var boxInput = document.getElementById('boxInput');
+
+        btnClose.style.display = "none";
+        inputFill.addEventListener("click", function () {
+            boxInput.style.borderBottom = '1px solid #fff';
+        });
+
+        inputFill.addEventListener("input", function () {
+            if (inputFill.value !== "") {
+                btnGenerate.disabled = false;
+                btnGenerate.classList.add("white-background");
+                btnClose.style.display = "inline-flex";
+            } else {
+                btnGenerate.disabled = true;
+                btnGenerate.classList.remove("white-background");
+                btnClose.style.display = "none";
+            }
+        });
+        $('.carousel').carousel({
+            speed: 100,
+            interval: 2000
+        })
+    </script>
+</body>
+
+</html>
