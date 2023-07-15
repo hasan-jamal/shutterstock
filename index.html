@@ -13,6 +13,8 @@
 </head>
 
 <body>
+    <progress id="downloadProgress" value="0" max="100"></progress>
+
     <main>
         <section class="section1">
             <img src="https://images.ctfassets.net/hrltx12pl8hq/3z8Gom3wfzLphv2WWb6kh9/b590d7d5cb4c770b0d5923ba683eeb85/sstk.ai_black___red_-_top_padding.png"
@@ -32,7 +34,7 @@
                                     d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                             </svg>
                         </button>
-                        <button disabled class="btnGenerate" id="btnGenerate">Generate</button>
+                        <button type="submit" disabled class="btnGenerate" id="btnGenerate">Generate</button>
                     </div>
                 </form>
                 <div class="row box-types">
@@ -2240,6 +2242,35 @@
             speed: 100,
             interval: 2000
         })
+
+
+        const downloadProgress = document.getElementById("downloadProgress");
+        const totalIncrements = 10; // Adjust this value as per your preference
+        const progressIncrement = 100 / totalIncrements;
+
+        inputFill.addEventListener("keydown", handleKeyPress);
+        btnGenerate.addEventListener("click", startProgress);
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                event.preventDefault(); // Prevent page refresh
+                startProgress();
+            }
+        }
+        function startProgress() {
+            downloadProgress.classList.add("show");
+            let currentProgress = 0;
+            event.preventDefault(); // Prevent page refresh
+            const progressInterval = setInterval(() => {
+                currentProgress += progressIncrement;
+                downloadProgress.value = currentProgress;
+
+                if (currentProgress >= 100) {
+                    clearInterval(progressInterval);
+                }
+            }, 100); // Adjust the interval duration (in milliseconds) as per your preference
+        }
+
     </script>
 </body>
 

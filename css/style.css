@@ -850,6 +850,28 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 .section-smallImage .smallImage:hover button{
     display: inline-flex;
 }
+#downloadProgress {
+  display: none;
+  width: 100%;
+  height: 5px;
+  background-color: #e0e0e0;
+}
+
+#downloadProgress.show {
+  display: block;
+}
+
+#downloadProgress::-webkit-progress-value {
+  background-color: #fc3441;
+}
+
+#downloadProgress::-moz-progress-bar {
+  background-color: #fc3441;
+}
+
+#downloadProgress::-ms-fill {
+  background-color: #fc3441;
+}
 @media (max-width:1000px) {
     .section1 h1{font-size: 1.4rem;}
     .section1 .box-black,
