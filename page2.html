@@ -589,6 +589,9 @@
                 downloadProgressInCard.value = currentProgressCard;
                 if (currentProgressCard >= 100) {
                     clearInterval(progressIntervalCard);
+                    divToggle.style.display = "block";
+                    backwrap.style.display = 'none';
+                    sectionBackwrap.style.height = '0vh';
                 }
             }, 1500); // Adjust the interval duration (in milliseconds) as per your preference
         }
