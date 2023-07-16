@@ -575,7 +575,7 @@
 
         inputFill.addEventListener("keydown", handleKeyPress);
         btnGenerate.addEventListener("click", startProgress);
-        startProgressInCard();
+
         function handleKeyPress(event) {
             if (event.key === "Enter") {
                 event.preventDefault(); // Prevent page refresh
@@ -594,6 +594,7 @@
         }
         function startProgress() {
             downloadProgress.classList.add("show");
+            event.preventDefault();
             let currentProgress = 0;
             const progressInterval = setInterval(() => {
                 currentProgress += progressIncrement;
