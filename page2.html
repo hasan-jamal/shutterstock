@@ -583,6 +583,7 @@
             }
         }
         function startProgressInCard() {
+            downloadProgress.style.display = 'none';
             let currentProgressCard = 0;
             const progressIntervalCard = setInterval(() => {
                 currentProgressCard += progressIncrement;

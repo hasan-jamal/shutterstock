@@ -39,7 +39,7 @@ html, body {
     margin-bottom: 0px;
 }
 .section1 .box-black{
-    width: 86%;
+    width: 1250px;
     margin: auto;
     background-color: #0c121c;
     border-radius: 8px;
@@ -239,7 +239,7 @@ html, body {
 }
 /* Section 2 */
 .section2{
-    width: 72%;
+    width: 1100px;
     margin: auto;
     font-family: 'Roboto',Roboto-fallback,Arial;
     padding: 48px 60px 48px 24px;
@@ -282,13 +282,17 @@ html, body {
 .section2 .carousel-item{
     height: 40vh;
     border-radius: 10px;
-    transition: transform 0s ease-in-out,-webkit-transform 0s ease-in-out !important;
+    transition: none !important;
+    display: none !important;
 }
 .section2 .carousel-item img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
+  }
+ .carousel-item.active{
+ display: block !important;
   }
   .section2 .carousel a{
     margin-top: auto;
@@ -350,6 +354,7 @@ html, body {
   }
   .carousel-item-next, .carousel-item-prev{
     opacity: 0 !important;
+    display: none !important;
   }
 /* Section duplicate */
 .section-duplicate{
@@ -357,9 +362,11 @@ html, body {
     margin: auto;
     padding: 24px 24px;
     background-color: #f3f4f5;
+    
 }
 .section-duplicate .container-padding{
-    width: 86%;margin: auto;
+        width: 1220px;
+        margin: auto;
 }
 .section-duplicate img{
     object-fit: cover;
@@ -388,7 +395,7 @@ font-size: 1.4993rem;
     align-items: center;
     color: #fff;
     border-radius: 25px;
-    padding: 5px 40px;
+       padding: 14px 73px;
     font-size: 1.133rem;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -398,9 +405,14 @@ font-size: 1.4993rem;
     color: #ffffff;}
 
 /* Section Cards */
-.section-cards{width: 90%;margin: auto; font-family: 'Roboto';    padding: 24px 24px;}
+.section-cards{   
+     width: 1250px;
+    margin: auto; 
+    font-family: 'Roboto'; 
+    padding: 24px 24px;
+}
 .section-cards h2{
-  font-weight: 400;
+    font-weight: 400;
     font-size: 1.4993rem;
     line-height: 1.5;
     color: #000000;
@@ -409,7 +421,7 @@ font-size: 1.4993rem;
     margin-bottom: 16px;
 }
 .section-cards .card-box img{
-    height: 138px;width: 100%;object-fit: cover;
+    height: 166px;width: 100%;object-fit: cover;
   border-radius: 5px;
 }
 .section-cards .card-box a{
@@ -438,6 +450,7 @@ font-size: 1.4993rem;
     text-align: center;
     padding: 24px 0px;
     height: 50vh;
+  
     background-image: url("//images.ctfassets.net/hrltx12pl8hq/hMZ30Bdi7i8yn9iEN4o99/2c75781d29a19bd597d9848e158103eb/AIGEN_Blue_banner_hero.png?fit=fill&w=600&h=400");
 }
 .section3 h1{
@@ -466,6 +479,7 @@ font-size: 1.4993rem;
 }
 /* Section Tool */
 .section-tool{
+    
     text-align: center;
     background: #F3F4F5;
     height: 20vh;
@@ -485,9 +499,12 @@ font-size: 1.4993rem;
     font-weight: 400;
     transform: rotate();
 }
+.section-tool .container-padding{
+    width: 1250px;
+}
 /* Section Toggles  */
 .section-toggles{
-    width: 90%;
+    width: 1250px;
     margin: auto;
     font-family: 'Roboto';
 }
@@ -535,7 +552,7 @@ font-size: 1.4993rem;
     font-family: 'Roboto';
 }
 .section-boxs .container-padding{
-    width: 90%;
+    width: 1250px;
     margin: auto;
     padding: 24px 0px;
 }
@@ -586,7 +603,7 @@ font-size: 1.4993rem;
     position: relative;
     width: 100%;
     border-radius: 10px;
-    height: 35vh;
+    height:340px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -683,8 +700,8 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .btnPublic svg{
     user-select: none;
-    width: .7em;
-    height:  .7em;
+    width: 1em;
+    height: 1em;
     fill: currentcolor;
     flex-shrink: 0;
     transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -695,7 +712,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .btnLike{
     bottom: 5px;
-    right: 48%;
+    right: 53%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -716,8 +733,8 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .btnLike svg{
 user-select: none;
-     width: .7em;
-    height:  .7em;
+     width: 1em;
+    height:  1em;
     fill: currentcolor;
     flex-shrink: 0;
     transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -728,7 +745,7 @@ user-select: none;
 }
 .sectio-tips{
     padding: 24px;
-    width: 90%;
+      width: 1250px;
     margin: auto;
     font-family: 'Roboto';
 }
@@ -747,6 +764,7 @@ user-select: none;
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 36px;
+border-radius: 16px;
 }
 .sectio-tips .card svg{
     width: 70px;
@@ -789,7 +807,7 @@ font-size: 1rem;
     cursor: pointer;
     position: relative;
     background: url(https://www.shutterstock.com/image-photo/beatiful-sunset-mountains-background-lake-260nw-2248106249.jpg);
-    height: 50vh;
+    height: 53vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -813,11 +831,11 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .btn-reload{
     bottom: 5px;
-    right: 12%;
+    right: 13%;
 }
 .btn-camera{
     bottom: 5px;
-    right: 22%;
+    right: 25%;
 }
 .boxImage button{display: none;}
 .boxImage:hover button{display: inline-flex;}
@@ -899,6 +917,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     .section-cards,
     .section-toggles,
     .cardDisc,
+    .section-tool .container-padding,
     .section-duplicate .container-padding{
         width: 100%;
     }
@@ -929,6 +948,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     .section-cards .card-box img{height: 180px;}
     .section-cards .card-box a{font-size: 1rem;}
     .section-smallImage .row{width: auto !important;}
+    
 }
 main{position: relative;}
 .backwrap {
@@ -1016,7 +1036,7 @@ main{position: relative;}
     top: 30%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 35%;
+    width:561px;
     margin: auto;
     color: #f1f1f2;
     background-color: #0d121c;
@@ -1106,4 +1126,12 @@ main{position: relative;}
         flex-direction: column;
     }
     .box-backwrap-text span,.box-backwrap-text p{font-size: 13px;}
+    .boxImage{
+        height: 40vh;
+    }
+    .btnPublic svg{
+        width:1rem;
+        height: 1rem;
+
+    }
 }
